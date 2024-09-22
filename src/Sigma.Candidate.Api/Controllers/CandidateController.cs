@@ -4,6 +4,9 @@ using Sigma.Candidate.Contracts.Services.SaveCandidate;
 
 namespace Sigma.Candidate.Api.Controllers;
 
+[ApiController]
+[Produces("application/json")]
+[Route("api/[controller]")]
 public class CandidateController(ICandidateService service) : ControllerBase
 {
 	private readonly ICandidateService _service = service;

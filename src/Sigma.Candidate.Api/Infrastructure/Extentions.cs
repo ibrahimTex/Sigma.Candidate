@@ -13,6 +13,11 @@ namespace Sigma.Candidate.Api.Infrastructure;
 
 public static class Extentions
 {
+	/// <summary>
+	/// Extention methods to keep the program clean
+	/// </summary>
+	/// <param name="applicationBuilder"></param>
+	/// <returns></returns>
 	public static WebApplicationBuilder AddServicesAndInfra(this WebApplicationBuilder applicationBuilder)
 	{
 		applicationBuilder.Services.InjectDatabase(applicationBuilder.Configuration.GetConnectionString("CandidateConstr"));
@@ -28,6 +33,9 @@ public static class Extentions
 		return applicationBuilder;
 	}
 
+	/// <summary>
+	/// Inject the necessary services and respos
+	/// </summary>
 	public static IServiceCollection InjectServices(this IServiceCollection services)
 	{
 		services.AddScoped<ICandidateService, CandidateService>();
@@ -36,6 +44,9 @@ public static class Extentions
 		return services;
 	}
 
+	/// <summary>
+	/// Extention method to inject the db context
+	/// </summary>
 	public static IServiceCollection InjectDatabase(this IServiceCollection services, string connectionString)
 	{
 		services.AddDbContext<CandidateContext>(options =>

@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{40413614-80A5-4F25-A5AC-7AC81F710CA0}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Candidate.Api", "src\Sigma.Candidate.Api\Sigma.Candidate.Api.csproj", "{C1D3A455-BBEF-4CE9-BB8F-401C68C96D6E}"
 EndProject
@@ -12,6 +15,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Candidate.DataAccess", "src\Sigma.Candidate.DataAccess\Sigma.Candidate.DataAccess.csproj", "{38F9DDF4-E1ED-4333-92D6-A57CD8226333}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Candidate.Service", "src\Sigma.Candidate.Service\Sigma.Candidate.Service.csproj", "{A4FC6275-4E35-4E63-9B57-79F84807BA7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{DECA660C-7E32-427A-9296-0D71F75B0E9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Candidate.Test", "tests\Sigma.Candidate.Test\Sigma.Candidate.Test.csproj", "{5CA0F073-DDCB-4481-B7A3-AA854E995774}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Candidate.Repo.Test", "tests\Sigma.Candidate.Repo.Test\Sigma.Candidate.Repo.Test.csproj", "{5BA50C09-2980-4D2F-B1AD-B54E21E9DEB0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +44,14 @@ Global
 		{A4FC6275-4E35-4E63-9B57-79F84807BA7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4FC6275-4E35-4E63-9B57-79F84807BA7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4FC6275-4E35-4E63-9B57-79F84807BA7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CA0F073-DDCB-4481-B7A3-AA854E995774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CA0F073-DDCB-4481-B7A3-AA854E995774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CA0F073-DDCB-4481-B7A3-AA854E995774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CA0F073-DDCB-4481-B7A3-AA854E995774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BA50C09-2980-4D2F-B1AD-B54E21E9DEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BA50C09-2980-4D2F-B1AD-B54E21E9DEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BA50C09-2980-4D2F-B1AD-B54E21E9DEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BA50C09-2980-4D2F-B1AD-B54E21E9DEB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +61,8 @@ Global
 		{9C5AC353-6D99-4F83-AC23-CF5819BE0B09} = {40413614-80A5-4F25-A5AC-7AC81F710CA0}
 		{38F9DDF4-E1ED-4333-92D6-A57CD8226333} = {40413614-80A5-4F25-A5AC-7AC81F710CA0}
 		{A4FC6275-4E35-4E63-9B57-79F84807BA7D} = {40413614-80A5-4F25-A5AC-7AC81F710CA0}
+		{5CA0F073-DDCB-4481-B7A3-AA854E995774} = {DECA660C-7E32-427A-9296-0D71F75B0E9C}
+		{5BA50C09-2980-4D2F-B1AD-B54E21E9DEB0} = {DECA660C-7E32-427A-9296-0D71F75B0E9C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D17D6AD-B56C-43BA-8641-0F4933A49C8F}
