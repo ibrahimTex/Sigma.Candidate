@@ -1,12 +1,21 @@
-var builder = WebApplication.CreateBuilder(args);
+using Serilog;
+using Sigma.Candidate.Api.Infrastructure;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.AddServicesAndInfra();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseSerilogRequestLogging();
+
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+	c.SwaggerEndpoint("/swagger/v1/swagger.json", "Candidate.Api");
+});
 
 app.UseHttpsRedirection();
 
