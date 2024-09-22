@@ -11,9 +11,11 @@ PROJECT FEATURES:
 	- Add or Update Candidate Information.
 
 PROJECT TECH STACK:
-	- Framework: .NET 8 (ASP.NET Core Web API)
-	- Database: Entity Framework Core / SQL
-	- Testing: xUnit for unit tests
+	- Framework: .NET 8 (ASP.NET Core Web API).
+	- Database: Entity Framework Core / SQL.
+	- Testing: xUnit for unit tests.
+	- Mapping: MapSter
+	- Logging: Serilog
 	- Caching: Normally i'm using InMemory (not implemented)
 		* Suggestion: In future if there a get API to fetch CandidateByEmail, 
 		We can use caching by store the response of the add API to in-memory cache

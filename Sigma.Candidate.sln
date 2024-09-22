@@ -5,7 +5,9 @@ VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{40413614-80A5-4F25-A5AC-7AC81F710CA0}"
 	ProjectSection(SolutionItems) = preProject
-		README.txt = README.txt
+		ASSUMPTIONS.md = ASSUMPTIONS.md
+		IMPROVEMENTS.md = IMPROVEMENTS.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sigma.Candidate.Api", "src\Sigma.Candidate.Api\Sigma.Candidate.Api.csproj", "{C1D3A455-BBEF-4CE9-BB8F-401C68C96D6E}"
